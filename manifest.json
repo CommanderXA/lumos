@@ -1,6 +1,6 @@
 {
-    "name": "lumos_website",
-    "short_name": "lumos_website",
+    "name": "lumos",
+    "short_name": "lumos",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
