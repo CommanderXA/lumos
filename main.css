@@ -1,0 +1,83 @@
+* {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-right: 7vw;
+    padding-left: 7vw;
+    font-size: 1vw;
+}
+
+section {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+.header-title {
+    font-size: 3em;
+    font-weight: 900;
+    background: -webkit-linear-gradient(45deg, #EB4B56, #8D59B5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+@media screen and (max-width: 1280px) {
+
+    body {
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        padding-right: 5vw;
+        padding-left: 5vw;
+        font-size: 1.5vw;
+    }
+
+    .header-title {
+        font-size: 3vw;
+        font-weight: 900;
+        background: -webkit-linear-gradient(45deg, #EB4B56, #8D59B5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    body {
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        padding-right: 10vw;
+        padding-left: 10vw;
+        font-size: 1vw;
+    }
+
+    .header-title {
+        text-align: center;
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        padding-top: 8vw;
+        padding-bottom: 8vw;
+        padding-right: 10vw;
+        padding-left: 10vw;
+        font-size: 18px;
+    }
+
+    .header-title {
+        text-align: center;
+        font-size: 8vw;
+    }
+
+    section {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}

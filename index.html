@@ -1,104 +1,265 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/lumos/">
-
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="lumos">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>lumos</title>
-  <link rel="manifest" href="manifest.json">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumos Волшебная школа Английского!</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/teachers.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 <body>
-  <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
-  <script>
-    var serviceWorkerVersion = '2989725413';
-    var scriptLoaded = false;
-    function loadMainDartJs() {
-      if (scriptLoaded) {
-        return;
-      }
-      scriptLoaded = true;
-      var scriptTag = document.createElement('script');
-      scriptTag.src = 'main.dart.js';
-      scriptTag.type = 'application/javascript';
-      document.body.append(scriptTag);
-    }
+    <header>
+        <div class="upper-header">
+            <div class="logo">
+                <img src="assets/icons/logo.png" alt="logo", width="100">
+                <h2>LUMOS ENGLISH SCHOOL</h2>
+            </div>
+            <div class="contact-element">
+                <h4>г. Нур-Султан, БЦ Алтай, Петрова 11, 5 этаж, 511 кабинет</h4>
+            </div>
+        </div>
+        <div class="header-middle">
+            <div class="header-middle-img"></div>
+            <div class="header-middle-text">
+                <h1 class="header-title">ИЗУЧИТЕ АНГЛИЙСКИЙ ВМЕСТЕ С НАМИ</h1>
+                <h3>У нас преподают лучшие выпускники ВУЗов с высокими экзаминационными баллами</h3>
+            </div>
+        </div>
+        <div class="header-lower">
+            <img src="assets/pictures/speak.png" alt="speak">
+            <div class="header-lower-text">
+                <h3>Изучение иностранного языка есть расширение сферы всего того, что мы вообще можем изучить</h3>
+                <p>- Ханс Георг Гадамер</p>
+            </div>
+        </div>
+    </header>
 
-    if ('serviceWorker' in navigator) {
-      // Service workers are supported. Use them.
-      window.addEventListener('load', function () {
-        // Wait for registration to finish before dropping the <script> tag.
-        // Otherwise, the browser will load the script multiple times,
-        // potentially different versions.
-        var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
-        navigator.serviceWorker.register(serviceWorkerUrl)
-          .then((reg) => {
-            function waitForActivation(serviceWorker) {
-              serviceWorker.addEventListener('statechange', () => {
-                if (serviceWorker.state == 'activated') {
-                  console.log('Installed new service worker.');
-                  loadMainDartJs();
-                }
-              });
-            }
-            if (!reg.active && (reg.installing || reg.waiting)) {
-              // No active web worker and we have installed or are installing
-              // one for the first time. Simply wait for it to activate.
-              waitForActivation(reg.installing || reg.waiting);
-            } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
-              // When the app updates the serviceWorkerVersion changes, so we
-              // need to ask the service worker to update.
-              console.log('New service worker available.');
-              reg.update();
-              waitForActivation(reg.installing);
-            } else {
-              // Existing service worker is still good.
-              console.log('Loading app from service worker.');
-              loadMainDartJs();
-            }
-          });
+    <section class="section-features">
+        <h1 class="header-title">Особенности LUMOS English School</h1>
+        <div class="section-features-element">
+            <div class="section-features-element-text">
+                <h3 class="section-features-element-text-title">Современный подход к преподаванию</h3>
+                <p>На наших уроках огромное внимание уделяеся практике разговора и рассуждению на Английском языке, чего очень часто не достает при обучении языка</p>
+            </div>
+            <img src="assets/pictures/teacher.svg" alt="teacher">
+        </div>
+        <div class="section-features-element">
+            <img src="assets/pictures/positive_energy.svg" alt="positive energy">
+            <div class="section-features-element-text">
+                <h3 class="section-features-element-text-title">Позитивная атмосфера на уроке</h3>
+                <p>Во время обучения Английскому не стоит забывать и о шутках, ведь они являются не только частью языка, но и частью культуры</p>
+            </div>
+        </div>
+        <div class="section-features-element">
+            <div class="section-features-element-text">
+                <h3 class="section-features-element-text-title">Дискуссии и споры</h3>
+                <p>Без сомнений бывает нам трудно спорить даже на роднм языке, что говорить про иностранный? Но чем раньше человек учится доказывать свою точку зрения оркужающим, тем легче он сможет это делать в будущем</p>
+                <br>
+                <p>В LUMOS English School практикуют навыки не только речи и слуха, но и что самое главное - навыки анализа. Это может помочь и в других областях, так как может способствовать открытию новых путей решения проблем</p>
+            </div>
+            <img src="assets/pictures/discuss.svg" alt="discuss">
+        </div>
+        <div class="section-features-element">
+            <img src="assets/pictures/date_picker.svg" alt="date picker">
+            <div class="section-features-element-text">
+                <h3 class="section-features-element-text-title">Глубокое погружение в язык</h3>
+                <p>Один из главных факторов на пути изучения языка - это непрерывность и упорство. Благодаря нашей системе вы учитесь 5 дней в неделю, тем самым больше совершенствуете язык</p>
+            </div>
+        </div>
+    </section>
 
-        // If service worker doesn't succeed in a reasonable amount of time,
-        // fallback to plaint <script> tag.
-        setTimeout(() => {
-          if (!scriptLoaded) {
-            console.warn(
-              'Failed to load app from service worker. Falling back to plain <script> tag.',
-            );
-            loadMainDartJs();
-          }
-        }, 4000);
-      });
-    } else {
-      // Service workers not supported. Just drop the <script> tag.
-      loadMainDartJs();
-    }
-  </script>
+    <section class="section-services">
+        <div class="section-services-title">
+            <h1 class="header-title section-services-title-text">Наши услуги</h1>
+        </div>
+        <div>
+            <div class="section-features-element">
+                <div class="services-education-type-text section-features-element-text">
+                    <h3>Изучение языка индивидуально</h4>
+                    <p>Безусловно, основным источником знаний и примером всегда будет преподаватель. Однако когда вы находитесь в окружении других людей, вы неизбежно перенимаете что-то у них. Это могут быть новые, пока незнакомые вам слова, выражения или грамматические структуры</p>
+                    <br>
+                    <p>Наши группы включают максимум 5 человек для комфортного изученя языка</p>
+                </div>
+                <img src="assets/pictures/individual.svg" alt="date picker">
+            </div> 
+            <div class="section-services-education-plan-elements">
+                <div class="section-services-education-plan-element">
+                    <img src="assets/pictures/90_number.svg" alt="number 1">
+                    <p>Минут в день</p>
+                </div>
+                <div class="section-services-education-plan-element">
+                    <img src="assets/pictures/5_number.svg" alt="number 5">
+                    <p>Дней в неделю</p>
+                </div>
+                <div class="section-services-education-plan-element">
+                    <img src="assets/pictures/20_number.svg" alt="number 20">
+                    <p>Занятий в месяц</p>
+                </div>
+            </div> 
+            <div class="section-features-element">
+                <img src="assets/pictures/group.svg" alt="date picker">
+                <div class="services-section-services-education-type-text section-features-element-text">
+                    <h3>Изучение языка в группе</h4>
+                    <p>Безусловно, основным источником знаний и примером всегда будет преподаватель. Однако когда вы находитесь в окружении других людей, вы неизбежно перенимаете что-то у них. Это могут быть новые, пока незнакомые вам слова, выражения или грамматические структуры</p>
+                    <br>
+                    <p>Наши группы включают максимум 5 человек для комфортного изученя языка</p>
+                </div>
+            </div>
+            
+            <div class="section-services-prices">
+                <div class="section-services-prices-element">
+                    <h2>70 000 ТГ</h2>
+                    <h3>Индивидуально</h3>
+                </div>
+                <div class="section-services-prices-element">
+                    <h2>25 000 ТГ</h2>
+                    <h3>Студентам в группе</h3>
+                </div>
+                <div class="section-services-prices-element">
+                    <h2>30 000 ТГ</h2>
+                    <h3>Взрослым в группе</h3>
+                </div>
+            </div>
+        </div>
+        <div class="section-features-element">
+            <div class="section-service-ielts">
+                <div class="section-services-ielts-text section-features-element-text">
+                    <h3>Подготовка к IELTS</h3>
+                    <div class="section-service-ielts-elements">
+                        <div class="section-service-ielts-element">
+                            <img src="assets/pictures/90_number.svg" alt="number 1">
+                            <p>Минут в день</p>
+                        </div>
+                        <div class="section-service-ielts-element">
+                            <img src="assets/pictures/3_number.svg" alt="number 5">
+                            <p>Дней в неделю</p>
+                        </div>
+                        <div class="section-service-ielts-element">
+                            <img src="assets/pictures/12_number.svg" alt="number 20">
+                            <p>Занятий в месяц</p>
+                        </div>
+                    </div> 
+                    <p>Безусловно, основным источником знаний и примером всегда будет преподаватель. Однако когда вы находитесь в окружении других людей, вы неизбежно перенимаете что-то у них. Это могут быть новые, пока незнакомые вам слова, выражения или грамматические структуры</p>
+                </div> 
+                
+            </div>
+            <img src="assets/pictures/exam.svg" alt="exam">
+        </div>
+        <div class="section-services-prices">
+            <div class="section-services-prices-element">
+                <h2>70 000 ТГ</h2>
+                <h3>Индивидуально</h3>
+            </div>
+            <div class="section-services-prices-element">
+                <h2>35 000 ТГ</h2>
+                <h3>В группе</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-teachers">
+        <h1 class="header-title">Преподаватели</h1>
+        <div class="section-teachers-teacher">
+            <div class="section-teachers-teacher-text section-features-element-text">
+                <h3>Балыкова Анель</h4>
+                <p>Я начала свою преподавательскую деятельность, когда была студенткой 2 курса. Со временем я осознала всю важность и ответственность моей профессии, и решила полностью посвятить себя преподаванию. За свою Карьеру я выпустила более 200 учеников, с которыми я оттачивала свою собственную методику преподавания (с использованием материалов Оксфорда, Кембриджа и IELTS)</p>
+                <br>
+                <p>Каждый урок я начинаю с намерением просветить своих студентов, подарить им возможность достичь большего. Десятки моих учеников увидели мир, были приняты в лучшие учебные заведения Казахстана и всего мира и теперь имеют доступ к глобальной информации. Мне приятно осознавать, что у меня есть возможность делиться своими знаниями и вносить свой вклад в жизни студентов, а значит и в наше будущее.</p>
+            </div>
+            <div class="section-teachers-teacher-image">
+                <img src="assets/pictures/teacher_1.jpg" alt="teacher 1">
+                <h3>Senior Teacher General English</h3>
+            </div>
+        </div>
+        <div class="section-teachers-teacher">
+            <div class="section-teachers-teacher-image">
+                <h3>IELTS Coach</h3>
+                <img src="assets/pictures/teacher_2.jpg" alt="teacher 2">
+            </div>
+            <div class="section-teachers-teacher-text section-features-element-text">
+                <h3>Амина Бимагамбетова</h4>
+                <p>Английский язык под силу каждому. Главное дисциплина и настоящий интерес. Несмотря на то, что я вложила много средств и времени на изучение английского со времен школы, я постоянно улучшаю его, ведь язык не стоит на месте.</p>
+                <br>
+                <p>Я готовлю студентов к IELTS, также являюсь специалистом в международной научной организации, моя специализация напрямую влияет на нашу методику обучения. Наш языковой центр так же разделяет данный подход: больше эффективности за меньшее время.</p>
+                <br>
+                <p>Здесь мы на своем примере обучаем студентов по-настоящему понимать и использовать отработанные навыки, а в подготовке к IELTS исключается бессмысленная зубрежка. К каждому студенту подбирается особый подход. Наша цель заинтересовать студентов начинающего уровня, а в продолжительной группе мы помогаем достичь следующий уровень без лишних трудностей. 20% усилий приносит 80% результатов если правильно расставить приоритеты. Мы направляем студентов к успешному владению английским языком, так как сами прошли через это.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-contact">
+        <h1 class="header-title">Связаться с нами</h1>
+        <div class="section-contact-block">
+            <div class="section-contact-block-element section-features-element-text">
+                <h3>Остались вопросы или уже спешите записаться?</h3>
+                <p>Задавайте вопросы и записывайтесь на бесплатный пробный урок</p>
+                <div class="section-contact-block-element-buttons">
+                    <a target="_blank" href="https://wa.me/message/JEXXDEDKHRXAH1">
+                        <div class="section-contact-block-element-buttons-button">
+                            <h4>Whatsapp</h4>
+                        </div>
+                    </a> 
+                    <a target="_blank" href="https://www.instagram.com/lumos.english.school/">
+                        <div class="section-contact-block-element-buttons-button">
+                            <h4>Instagram</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <img src="assets/pictures/contact_us.svg" alt="contact us">
+        </div>
+    </section>
+
+    <footer>
+        <h1 class="header-title">Контакты</h1>
+        <div class="footer-large">
+            <div class="footer-links">
+                <a target="_blank" class="footer-block" href="https://goo.gl/maps/6NgEVVjDwWAecMtv7">
+                    <img src="assets/pictures/home.svg" alt="home">
+                </a>
+                <a target="_blank" class="footer-block" href="tel:+77071807215">
+                    <img src="assets/pictures/phone.svg" alt="home">
+                </a>
+                <a target="_blank" class="footer-block" href="https://www.instagram.com/lumos.english.school/">
+                    <img src="assets/pictures/instagram.svg" alt="home">
+                </a>
+            </div>
+            <div class="footer-text">
+                <h4>г. Нур-Султан, БЦ Алтай, Петрова 11, 5 этаж, 511 кабинет</h4>
+                <h4>+7(707) 180 7215</h4>
+                <h4>@lumos.english.school</h4>
+            </div>
+        </div>
+
+        <div class="footer-small">
+            <div class="footer-links">
+                <div class="footer-links-element">
+                    <a target="_blank" class="footer-block" href="https://goo.gl/maps/6NgEVVjDwWAecMtv7">
+                        <img src="assets/pictures/home.svg" alt="home">
+                    </a>
+                    <h4>г. Нур-Султан, БЦ Алтай, Петрова 11, 5 этаж, 511 кабинет</h4>
+                </div>
+                <div class="footer-links-element">
+                    <a target="_blank" class="footer-block" href="tel:+77071807215">
+                        <img src="assets/pictures/phone.svg" alt="home">
+                    </a>
+                    <h4>+7(707) 180 7215</h4>
+                </div>
+                <div class="footer-links-element">
+                    <a target="_blank" class="footer-block" href="https://www.instagram.com/lumos.english.school/">
+                        <img src="assets/pictures/instagram.svg" alt="home">
+                    </a>
+                    <h4>@lumos.english.school</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

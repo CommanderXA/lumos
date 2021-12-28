@@ -1,0 +1,91 @@
+/* CONTACT US */
+
+.section-contact-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-contact-block img {
+    width: 30vw;
+}
+
+.section-contact-block-element {
+    margin-right: 5vw;
+}
+
+.section-contact-block-element-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 2vw;
+}
+
+.section-contact-block-element-buttons-button:first-child { margin-right: 1vw; }
+
+.section-contact-block-element-buttons-button {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    background-color: #EB4B56;
+    display: block;
+    border-radius: 100vw;
+    color: #fff;
+}
+
+.section-contact-block-element-buttons-button:hover {
+    background-color: #cccccc;
+    color: #EB4B56;
+}
+
+.section-contact-block-element-buttons-button:active {
+    background-color: #bbb;
+    color: #EB4B56;
+}
+
+.section-contact-block-element-buttons-button:nth-child(odd) {
+    margin-bottom: 1vw;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .section-contact-block {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 4vw;
+    }
+
+    .section-contact-block img {
+        width: 50vw;
+    }
+
+    .section-contact-block-element {
+        margin-right: 0vw;
+    }
+
+    .section-contact-block-element-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 4vw;
+    }
+
+    .section-contact-block-element-buttons-button:first-child { margin-right: 1vw; }
+
+    .section-contact-block-element-buttons-button {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        background-color: #EB4B56;
+        display: block;
+        border-radius: 100vw;
+        color: #fff;
+    }
+
+    .section-contact-block-element-buttons-button:nth-child(odd) {
+        margin-bottom: 2vw;
+    }
+}

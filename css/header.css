@@ -1,0 +1,242 @@
+/* HEADER */
+
+.upper-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo h2 {
+    font-weight: 900;
+    background: -webkit-linear-gradient(45deg, #EB4B56, #8D59B5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo img {
+    margin-right: 1vw;
+}
+
+.contact-element {
+    font-size: 1.3vw;
+}
+
+.header-middle {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 2vw;
+}
+
+.header-middle-img {
+    border-radius: 3vw;
+    width: 120%;
+    height: 28vw;
+    background-image: url("../assets/pictures/classroom.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);;
+}
+
+.header-middle-text {
+    padding-left: 2vw;
+}
+
+.header-middle-text h1 {
+    font-size: 3vw;
+    padding-bottom: 1vw;
+}
+
+.header-middle-text h3 {
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.3vw;
+}
+
+.header-lower {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-lower img {
+    width: 8vw;
+    padding-right: 2vw;
+}
+
+.header-lower-text {
+    font-size: 1.5vw;
+}
+
+.header-lower-text h3 {
+    padding-bottom: 1vw;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.header-lower-text p {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1280px) {
+    .upper-header {
+        display: flex;
+        flex-direction: column;
+        padding: 1vw;
+    }
+
+    .contact-element {
+        font-size: 1.8vw;
+    }
+
+    .logo {
+        padding-bottom: 2vw;
+    }
+    
+    .header-middle-text {
+        padding-left: 4vw;
+    }
+    
+    .header-middle-text h1 {
+        font-size: 3.5vw;
+        padding-bottom: 2vw;
+    }
+    
+    .header-middle-text h3 {
+        font-size: 1.8vw;
+    }
+
+    .header-lower {
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+    }
+    
+    .header-lower img {
+        width: 12vw;
+        padding-right: 4vw;
+    }
+    
+    .header-lower-text {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .header-middle {
+        flex-direction: column;
+        padding-top: 2vw;
+    }
+
+    .logo {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .logo img {
+       width: 15vw;
+    }
+
+    .logo h2 {
+        font-size: 28px;
+    }
+
+    .contact-element {
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .header-middle-img {
+        border-radius: 3vw;
+        width: 90%;
+        height: 48vw;
+        background-image: url("../assets/pictures/classroom.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);;
+    }
+    
+    .header-middle-text {
+        padding-left: 0vw;
+        padding-top: 4vw;
+    }
+    
+    .header-middle-text h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+    
+    .header-middle-text h3 {
+        font-size: 28px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    .logo {
+        flex-direction: column;
+    }
+
+    .logo h2 {
+        padding-top: 20px;
+        font-size: 24px;
+    }
+
+    .contact-element {
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .header-middle-text h1 {
+        font-size: 8vw;
+        text-align: center;
+    }
+    
+    .header-middle-text h3 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .header-lower {
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header-lower img {
+        width: 20vw;
+        padding-right: 0;
+        padding-bottom: 4vw;
+    }
+    
+    .header-lower-text {
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .header-lower-text h3 {
+        padding-bottom: 2vw;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .header-lower-text p {
+        font-weight: 700;
+    }
+}

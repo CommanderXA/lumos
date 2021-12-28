@@ -1,0 +1,78 @@
+/* TEACHERS */
+
+.section-teachers-teacher {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section-teachers-teacher-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-teachers-teacher-image h3 {
+    font-weight: 900;
+    font-size: 1.8vw;
+    text-align: center;
+    color: #EB4B56;
+}
+
+.section-teachers-teacher-image img:nth-child(odd) { padding-bottom: 2vw; }
+.section-teachers-teacher-image img:nth-child(even) { padding-top: 2vw; }
+
+.section-teachers-teacher-text:nth-child(odd) { text-align: start; margin-right: 4vw; }
+.section-teachers-teacher-text:nth-child(even) { text-align: end; margin-left: 4vw; }
+
+.section-teachers-teacher img { border-radius: 50%; width: 20vw; height: 20vw; }
+
+@media screen and (max-width: 1280px) {
+
+    .section-teachers-teacher-image h3 {
+        font-size: 2.5vw;
+    }
+
+    .section-teachers-teacher img { border-radius: 50%; width: 30vw; height: 30vw; }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .section-teachers-teacher {
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+        flex-direction: column-reverse;
+    }
+
+    .section-teachers h1 {
+        padding-bottom: 4vw;
+    }
+
+    .section-teachers-teacher:last-child {
+        flex-direction: column;
+    }
+    
+    .section-teachers-teacher-image h3 {
+        font-size: 3vw;
+    }
+
+    .section-teachers-teacher-image:first-child {
+        flex-direction: column-reverse;
+    }
+    
+    .section-teachers-teacher-image img:nth-child(odd) { padding-bottom: 2vw; }
+    .section-teachers-teacher-image img:nth-child(even) { padding-top: 0vw; padding-bottom: 2vw; }
+    
+    .section-teachers-teacher-text:nth-child(odd) { text-align: center; margin-right: 0vw; }
+    .section-teachers-teacher-text:nth-child(even) { text-align: center; margin-left: 0vw; }
+    
+    .section-teachers-teacher img { width: 40vw; height: 40vw; }
+}
+
+@media screen and (max-width: 1024px) {
+    .section-teachers-teacher-image h3 {
+        font-size: 4vw;
+    }
+}
