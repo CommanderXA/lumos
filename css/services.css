@@ -44,11 +44,13 @@
     color: #EB4B56;
     font-size: 3vw;
     font-weight: 900;
+    text-align: center;
 }
 
 .section-services-prices-element h3 {
     font-size: 1.5vw;
     font-weight: 800;
+    text-align: center;
 }
 
 .section-services-ielts-text {
